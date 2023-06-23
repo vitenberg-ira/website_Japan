@@ -12,6 +12,30 @@
 
     <!-- Header start -->
     <header class="header">
+
+        <!-- HTML модального окна -->
+        <div id="openModal" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">SIGN IN</h3>
+                            <a href="#close" title="Close" class="close">×</a>
+                    </div>
+                    <div class="modal-body">  
+                        <form class="modal__form">
+                            <fieldset class="modal-form__wrap">
+                                <p class="modal-form__info">
+                                    <input type="text" name="user-Email/Phone-number" class="modal-form__field" placeholder="Email/Phone-number"> 
+                                    <input type="password" name="user-Password" class="modal-form__field" placeholder="Password">
+                                    <button type="submit" class="modal-form__submit">LOGIN</button>
+                                </p>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="wrapper">
             <div class="header__wrapper">
                 <div class="header__logo">
@@ -31,12 +55,13 @@
                             <a href="#!" class="header__link">Videos</a>
                         </li>
                         <li class="header__item">
-                            <a href="#!" class="header__link">Sign in</a>
+                            <a href="#openModal" class="header__link">Sign in</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
+
     </header>
     <!-- Header end -->
 
