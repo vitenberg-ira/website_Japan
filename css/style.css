@@ -55,8 +55,6 @@ img{
     background: rgba(0,0,0,0.5); /* фон */
     z-index: 1050;
     opacity: 0; /* по умолчанию модальное окно прозрачно */
-    -webkit-transition: opacity 200ms ease-in; 
-    -moz-transition: opacity 200ms ease-in;
     transition: opacity 200ms ease-in; /* анимация перехода */
     pointer-events: none; /* элемент невидим для событий мыши */
     margin: 0;
